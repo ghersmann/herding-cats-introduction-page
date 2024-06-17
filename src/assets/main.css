@@ -1,35 +1,114 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url(@/assets/fonts/Satoshi-Variable.woff) format(woff);
+  src: url(@/assets/fonts/Satoshi-Variable.woff2) format(woff2);
+  src: url(@/assets/fonts/Satoshi-Variable.ttf) format(truetype);
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+:root {
+  --dark-button-blue: #051533;
+  --green-travel: #556c6c;
+  --green-packing-list: #4d836d;
+  --gray-accomodation: #dfd9c4;
+  --pink-activities: #f1c8bc;
+  --pink-background: #caa9a0;
+  --turqoise-notes: #599097;
+  --turqoise-gray-background: #88a3a7;
+  --yellow-calendar: #f4e2a6;
+  --required-red: rgb(165, 0, 0);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+html {
+  font-size: 10px;
+  background-color: var(--turqoise-gray-background);
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.header {
+  margin: 2rem auto;
+}
+
+h1 {
+  font-family: 'Satoshi-Variable', 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 6.5rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  font-family: 'Satoshi-Variable';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+  font-family: 'Satoshi-Variable';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+h4 {
+  font-family: 'Satoshi-Variable';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+p {
+  font-family: 'Satoshi-Variable';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color: #000000;
+}
+
+.img-shadow {
+  box-shadow: 0px 0.2rem 0.4rem var(--dark-button-blue);
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  width: 600px;
+  height: 500px;
+}
+
+.text-container {
+  margin-top: 4rem;
+  width: 600px;
+  height: 500px;
+}
+
+.main-container {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  height: 80vh;
+  background-color: var(--gray-accomodation);
 }
