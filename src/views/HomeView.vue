@@ -5,8 +5,10 @@
     <h3>April 2024</h3>
   </header>
   <main class="main-container">
-    <ScreenShots />
-    <IntroText />
+    <div class="img-container"><ScreenShots /></div>
+    <article class="text-container">
+      <IntroText />
+    </article>
   </main>
 </template>
 

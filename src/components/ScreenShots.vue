@@ -1,23 +1,18 @@
 <template>
-  <div class="img-container">
-    <img
-      class="img-shadow"
-      src="../assets/img/herding-cats-start-page.png"
-      alt="Herding Cats Travel App Startpage"
-      height="500px"
-    />
-    <img
-      class="img-shadow"
-      src="../assets/img/herding-cats-travel-overview.png"
-      alt="Herding Cats Travel App Trip Overview"
-      height="500px"
-    />
-  </div>
+  <img
+    class="img-shadow"
+    src="../assets/img/herding-cats-start-page.png"
+    alt="Herding Cats Travel App Startpage"
+  />
+  <img
+    class="img-shadow"
+    src="../assets/img/herding-cats-travel-overview.png"
+    alt="Herding Cats Travel App Trip Overview"
+  />
 </template>
 
 <script>
 export default {
-  name: 'ScreenShots',
-  props: {}
+  name: 'ScreenShots'
 }
 </script>
